@@ -1,9 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Formularz</title>
-    </head>
-    <body>
-        <h1>Witaj świecie!</h1>
-    </body>
+  <head>
+    <title>Formularz</title>
+  </head>
+  <body>
+    <form action="127.0.0.1" method="post">
+      <label for="e-mail">
+        E-mail*:
+        <input name="E-mail" type="email" required />
+      </label>
+      <label for="password">
+        Hasło*:
+        <input name="password" type="password" required />
+      </label>
+      <label for="name">
+        Imię*:
+        <input name="name" type="text" required />
+      </label>
+      <label for="last-name">
+        Nazwisko*:
+        <input name="last-name" type="text" required />
+      </label>
+      <label for="address">
+        Ulica*:
+        <input name="address" type="text" required />
+      </label>
+      <label for="voievodeship">
+        Województwo*:
+        <select name="voievodeship" required>
+          <option value="">--Please choose an option--</option>
+          <option value="1">Dolnośląskie</option>
+          <option value="2">Kujawsko-pomorskie</option>
+          <option value="3">Lubelskie</option>
+          <option value="4">Lubuskie</option>
+          <option value="5">Łódzkie</option>
+          <option value="6">Małopolskie</option>
+          <option value="7">Mazowieckie</option>
+          <option value="8">Opolskie</option>
+          <option value="9">Podkarpackie</option>
+          <option value="10">Podlaskie</option>
+          <option value="11">Pomorskie</option>
+          <option value="12">Śląskie</option>
+          <option value="13">Świętokrzyskie</option>
+          <option value="14">Warmińsko-mazurskie</option>
+          <option value="15">Wielkopolskie</option>
+          <option value="16">Zachodnio-pomorskie</option>
+        </select>
+      </label>
+      <label for="date-of-birth">
+        Data urodzenia*:
+        <input name="date-of-birth" type="date" required />
+      </label>
+      <label for="phone-number">
+        Nr telefonu*:
+        <input name="phone-number" type="tel" required />
+      </label>
+      <input name="has-drivers-license" type="checkbox" required />
+      <label for="has-drivers-license"> Czy posiadasz prawo jazdy: </label>
+      <label for="notices">
+        Uwagi:
+        <textarea name="notices">
+        </textarea>
+      </label>
+      <input type="submit" value="Wyślij"/>
+    </form>
+  </body>
 </html>
