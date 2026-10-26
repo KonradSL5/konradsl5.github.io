@@ -1,67 +1,72 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Formularz</title>
-  </head>
-  <body>
-    <form action="127.0.0.1" method="post">
-      <label for="e-mail">
-        E-mail*:
-        <input name="E-mail" type="email" required />
-      </label>
-      <br /><label for="password">
-        Hasło*:
-        <input name="password" type="password" required />
-      </label>
-      <br /><label for="name">
-        Imię*:
-        <input name="name" type="text" required />
-      </label>
-      <br /><label for="last-name">
-        Nazwisko*:
-        <input name="last-name" type="text" required />
-      </label>
-      <br /><label for="address">
-        Ulica*:
-        <input name="address" type="text" required />
-      </label>
-      <br /><label for="voievodeship">
-        Województwo*:
-        <select name="voievodeship" required>
-          <option value="">-- Wybierz województwo --</option>
-          <option value="1">Dolnośląskie</option>
-          <option value="2">Kujawsko-pomorskie</option>
-          <option value="3">Lubelskie</option>
-          <option value="4">Lubuskie</option>
-          <option value="5">Łódzkie</option>
-          <option value="6">Małopolskie</option>
-          <option value="7">Mazowieckie</option>
-          <option value="8">Opolskie</option>
-          <option value="9">Podkarpackie</option>
-          <option value="10">Podlaskie</option>
-          <option value="11">Pomorskie</option>
-          <option value="12">Śląskie</option>
-          <option value="13">Świętokrzyskie</option>
-          <option value="14">Warmińsko-mazurskie</option>
-          <option value="15">Wielkopolskie</option>
-          <option value="16">Zachodnio-pomorskie</option>
-        </select>
-      </label>
-      <br /><label for="date-of-birth">
-        Data urodzenia*:
-        <input name="date-of-birth" type="date" required />
-      </label>
-      <br /><label for="phone-number">
-        Nr telefonu*:
-        <input name="phone-number" type="tel" required />
-      </label>
-      <br /><input name="has-drivers-license" type="checkbox" required />
-      <label for="has-drivers-license"> Czy posiadasz prawo jazdy: </label>
-      <br /><label for="notices">
-        Uwagi:<br />
-        <textarea name="notices"> </textarea>
-      </label>
-      <br /><input type="submit" value="Wyślij" />
-    </form>
-  </body>
+	<head>
+		<title>Formularz</title>
+		<link href="./form.css" rel="stylesheet" />
+	</head>
+	<body>
+		<form action="127.0.0.1" method="post">
+			<div class="grid">
+				<label for="e-mail">
+					<span>E-mail</span>
+					<input id="e-mail" name="e-mail" type="email" required />
+				</label>
+				<label for="password">
+					<span>Hasło</span>
+					<input id="password" name="password" type="password" required />
+				</label>
+				<label for="name">
+					<span>Imię</span>
+					<input id="name" name="name" type="text" required />
+				</label>
+				<label for="last-name">
+					<span>Nazwisko</span>
+					<input id="last-name" name="last-name" type="text" required />
+				</label>
+				<label for="address">
+					<span>Ulica</span>
+					<input id="address" name="address" type="text" required />
+				</label>
+				<label for="voievodeship">
+					<span>Województwo</span>
+					<select id="voievodeship" name="voievodeship" required>
+						<option value="">-- Wybierz województwo --</option>
+						<option value="1">Dolnośląskie</option>
+						<option value="2">Kujawsko-pomorskie</option>
+						<option value="3">Lubelskie</option>
+						<option value="4">Lubuskie</option>
+						<option value="5">Łódzkie</option>
+						<option value="6">Małopolskie</option>
+						<option value="7">Mazowieckie</option>
+						<option value="8">Opolskie</option>
+						<option value="9">Podkarpackie</option>
+						<option value="10">Podlaskie</option>
+						<option value="11">Pomorskie</option>
+						<option value="12">Śląskie</option>
+						<option value="13">Świętokrzyskie</option>
+						<option value="14">Warmińsko-mazurskie</option>
+						<option value="15">Wielkopolskie</option>
+						<option value="16">Zachodnio-pomorskie</option>
+					</select>
+				</label>
+				<label for="date-of-birth">
+					<span>Data urodzenia</span>
+					<input id="date-of-birth" name="date-of-birth" type="date" required />
+				</label>
+				<label for="phone-number">
+					<span>Nr telefonu</span>
+					<input id="phone-number" name="phone-number" type="tel" required />
+				</label>
+				<label for="has-drivers-license">
+					<input id="has-drivers-license" name="has-drivers-license" type="checkbox" />
+					<span>Posiadam prawo jazdy</span>
+				</label>
+			</div>
+			<label for="notices">
+				<span>Uwagi</span>
+				<textarea id="notices" name="notices"> </textarea>
+			</label>
+			<input type="submit" value="Wyślij" />
+		</form>
+	</body>
 </html>

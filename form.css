@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+	height: 100%;
+}
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background: #833ab4;
+	background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	margin: 0;
+}
+
+form {
+	background: whitesmoke;
+	padding: 1em;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+form label {
+	background-color: bisque;
+	border: 0.2rem solid tan;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+}
+
+form label > span {
+	font-size: 0.8em;
+}
+
+form label:has(input[type="checkbox"]) {
+	flex-direction: row;
+	grid-column: span 2;
+}
+
+form label:has(*[required]) > span::after {
+	content: "*";
+	color: red;
+}
+
+.grid {
+	display: grid;
+	gap: 0.5em;
+	grid-template-areas: "a a";
+	grid-auto-columns: max-content 1fr;
+}
+
+form input[type="submit"] {
+	&:hover {
+		filter: brightness(85%);
+	}
+
+	&:active {
+		filter: brightness(60%);
+	}
+
+	font-size: 1.5em;
+	padding: 0.5em;
+	background-color: tan;
+	border: 0.1em solid gray;
+	border-radius: 0.2em;
+}

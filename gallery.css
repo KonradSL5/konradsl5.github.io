@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+}
+
+.container {
+	background-color: whitesmoke;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+	gap: 0.5em;
+}
+
+.container > img {
+	object-fit: cover;
+	max-width: 100%;
+	aspect-ratio: 16/9;
+}
+
+.container > span {
+	font-style: italic;
+	color: darkslategrey;
+}
